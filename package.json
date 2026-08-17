@@ -1,0 +1,25 @@
+{
+  "name": "terabox-telegram-bot",
+  "version": "2.2.0",
+  "description": "Self-hosted TeraBox share-link resolver with a secure Telegram bot interface, ready for Docker-based Heroku deployment",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "teleproto": "^1.228.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3"
+  }
+}
